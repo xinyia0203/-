@@ -21,9 +21,12 @@ namespace CourseManager
             // 使用 Modernizr 的开发版本进行开发和了解信息。然后，当你做好
             // 生产准备时，请使用 http://modernizr.com 上的生成工具来仅选择所需的测试。
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+                        "~/Scripts/modernizr-*",
+                        "~/Scripts/bootstrap.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/site.css",
+                "~/Content/bootstrap.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
