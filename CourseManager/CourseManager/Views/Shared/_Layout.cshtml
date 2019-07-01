@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            @Html.Partial("Partial1")
+            @Html.Action("Partial1", "Home")
         </header>
         <div id="body">
             @RenderSection("featured", required: false)
