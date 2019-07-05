@@ -39,5 +39,13 @@ namespace CourseManager.Controllers
             ViewBag.Site = site;
             return PartialView("~/Views/Shared/Partial1.cshtml");
     }
+        [ChildActionOnly]
+
+        public ActionResult SideBar()
+        {
+            var sidebars = db.SideBars.ToList();
+            ViewBag.Sidebars = sidebars;
+            return PartialView("~/Views/Shared/SideBar.cshtml");
+        }
 }
 }

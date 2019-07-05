@@ -167,6 +167,7 @@
     <Compile Include="Controllers\ClassController.cs" />
     <Compile Include="Controllers\CourseManagementController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SideBarController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Global.asax.cs">
@@ -175,6 +176,10 @@
     <Compile Include="Migrations\201906290014541_20191218858.cs" />
     <Compile Include="Migrations\201906290014541_20191218858.Designer.cs">
       <DependentUpon>201906290014541_20191218858.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907050058023_20191225857.cs" />
+    <Compile Include="Migrations\201907050058023_20191225857.Designer.cs">
+      <DependentUpon>201907050058023_20191225857.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\seeds\ActionLinkCreator.cs" />
@@ -201,6 +206,7 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
+    <Compile Include="Models\SideBars.cs" />
     <Compile Include="Models\Students.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -365,6 +371,12 @@
     <Content Include="Views\ActionLink\Create.cshtml" />
     <Content Include="Views\ActionLink\Edit.cshtml" />
     <Content Include="Views\ActionLink\Delete.cshtml" />
+    <Content Include="Views\SideBar\Index.cshtml" />
+    <Content Include="Views\SideBar\Details.cshtml" />
+    <Content Include="Views\SideBar\Create.cshtml" />
+    <Content Include="Views\SideBar\Edit.cshtml" />
+    <Content Include="Views\SideBar\Delete.cshtml" />
+    <Content Include="Views\Shared\SideBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -379,6 +391,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906290014541_20191218858.resx">
       <DependentUpon>201906290014541_20191218858.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907050058023_20191225857.resx">
+      <DependentUpon>201907050058023_20191225857.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
