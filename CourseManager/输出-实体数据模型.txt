@@ -1,0 +1,4 @@
+﻿已生成模型文件: CourseManager.edmx。
+从数据库花费 00:00:00.3443963 加载元数据。
+生成模型花费 00:00:00.9424450。
+已成功在 Web.Config 文件中注册程序集“System.Data.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089”。
