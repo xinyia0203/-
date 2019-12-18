@@ -1,13 +1,13 @@
-﻿
-@using CourseManager.Models
+﻿@using CourseManager.Models
 
 @{
     var site = (Websitelnfo)ViewBag.Site;
+    var actionlinks = (List<ActionLink>)ViewBag.ActionLinks;
 }
 
 <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("课程管理系统", "Index", "Home")</p>
+                    <p class="site-title">@Html.ActionLink(site.sitename, "Index", "Home")</p>
                 </div>
                 <div class="float-right">
                     <section id="login">
@@ -15,9 +15,9 @@
                     </section>
                     <nav>
                         <ul id="menu">
-                            @foreach(var Link in site.ActionLinks)
+                            @foreach (var actionlink in actionlinks)
                             {
-                                <li>@Html.ActionLink(Link.Name,Link.Action,Link.Controller)</li>
+                                <li>@Html.ActionLink(actionlink.Name,actionlink.Action,actionlink.Controller)</li>
                             }
                             
                         </ul>

@@ -163,6 +163,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ActionLinkController.cs" />
     <Compile Include="Controllers\ClassController.cs" />
     <Compile Include="Controllers\CourseManagementController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -171,9 +172,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201911270850545_Create201911271650.cs" />
-    <Compile Include="Migrations\201911270850545_Create201911271650.Designer.cs">
-      <DependentUpon>201911270850545_Create201911271650.cs</DependentUpon>
+    <Compile Include="Migrations\201906290014541_20191218858.cs" />
+    <Compile Include="Migrations\201906290014541_20191218858.Designer.cs">
+      <DependentUpon>201906290014541_20191218858.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\seeds\ActionLinkCreator.cs" />
@@ -210,6 +211,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -266,7 +271,18 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -281,6 +297,7 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -341,6 +358,11 @@
     <Content Include="Views\CourseManagement\Edit.cshtml" />
     <Content Include="Views\CourseManagement\Delete.cshtml" />
     <Content Include="Views\Shared\Partial1.cshtml" />
+    <Content Include="Views\ActionLink\Index.cshtml" />
+    <Content Include="Views\ActionLink\Details.cshtml" />
+    <Content Include="Views\ActionLink\Create.cshtml" />
+    <Content Include="Views\ActionLink\Edit.cshtml" />
+    <Content Include="Views\ActionLink\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -353,8 +375,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911270850545_Create201911271650.resx">
-      <DependentUpon>201911270850545_Create201911271650.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906290014541_20191218858.resx">
+      <DependentUpon>201906290014541_20191218858.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
