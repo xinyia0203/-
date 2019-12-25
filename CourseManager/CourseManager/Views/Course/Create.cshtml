@@ -1,10 +1,7 @@
-﻿@model CourseManager.Models.Students
+﻿@model CourseManager.Models.Course
 
 @{
     ViewBag.Title = "Create";
-    var classes = (List<CourseManager.Models.Classes>)ViewBag.Classes;
-}
-
 }
 
 <h2>Create</h2>
@@ -13,7 +10,7 @@
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>Students</legend>
+        <legend>Course</legend>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Name)
@@ -21,19 +18,6 @@
         <div class="editor-field">
             @Html.EditorFor(model => model.Name)
             @Html.ValidationMessageFor(model => model.Name)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.ClassId)
-        </div>
-        <div class="editor-field">
-        <select name="TeacherId" class="form-control">
-                @foreach (var cls in classes)
-                { 
-                <option value="@cls.Id">@cls.Name</option>
-                }
-            </select>
-
         </div>
 
         <p>
